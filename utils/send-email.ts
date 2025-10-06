@@ -13,7 +13,7 @@ export async function sendEmail(params: params) {
     try {
 
         const response = await resend.emails.send({
-            from: `${process.env.RESEND_FROM_ORG!} <${process.env.RESEND_FROM_EMAIL!}>`,
+            from: `${process.env.RESEND_FROM_ORG_NAME!} <${process.env.RESEND_FROM_ORG_EMAIL!}>`,
             to,
             subject,
             text
